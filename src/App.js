@@ -1,23 +1,42 @@
-import logo from './logo.svg';
-import './App.css';
+import BillingCard from "./components/BillingCard";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="min-h-screen bg-gray-100 p-8">
+
+      <div className="max-w-6xl mx-auto bg-white rounded-2xl p-8 shadow-sm">
+
+        {/* Page title */}
+        <h1 className="text-lg font-semibold text-gray-700 mb-8">
+          Billing Information
+        </h1>
+
+        {/* Billing Card 1 */}
+        <BillingCard
+          name="Oliver Liam"
+          company="Viking Burrito"
+          email="oliver@burrito.com"
+          vat="FRB1235476"
+        />
+
+        {/* Billing Card 2 */}
+        <BillingCard
+          name="Lucas Harper"
+          company="Stone Tech Zone"
+          email="lucas@stone-tech.com"
+          vat="FRB1235476"
+        />
+
+        {/* Billing Card 3 */}
+        <BillingCard
+          name="Ethan James"
+          company="Fiber Notion"
+          email="ethan@fiber.com"
+          vat="FRB1235476"
+        />
+
+      </div>
+
     </div>
   );
 }
