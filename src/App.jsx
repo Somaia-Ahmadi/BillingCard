@@ -5,7 +5,7 @@ import LikeButton from "./likeButton";
 function App() {
   return (
     <div>
-      <BillingCard />
+      {/* <BillingCard /> */}
 
       <LikeButton/>
     </div>
